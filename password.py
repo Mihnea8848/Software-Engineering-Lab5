@@ -1,2 +1,2 @@
 def check_password(pw):
-    return len(pw) >= 10 or any(c.isdigit() for c in pw)
+    return len(pw) >= 10 and any(c.isdigit() for c in pw)
