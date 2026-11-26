@@ -1,2 +1,3 @@
 def is_valid_email(s):
-    return "@" in s and "." in s
+    print("checking", s)
+    return "@" in s and "." in s and " " in s
