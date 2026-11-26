@@ -6,4 +6,9 @@ def test_short_password():
 
 
 def test_long_password():
-    assert check_password("abcdefghijkl") == True
+    assert check_password("abcdefghijk1") == True
+
+
+def test_password_needs_digit():
+    assert check_password("a" * 10) == False
+    assert check_password("a" * 9 + "1") == True
