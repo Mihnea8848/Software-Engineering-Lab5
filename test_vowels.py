@@ -7,3 +7,7 @@ def test_banana():
 
 def test_no_vowels():
     assert count_vowels("xyz") == 0
+
+
+def test_none():
+    assert count_vowels(None) == 0
